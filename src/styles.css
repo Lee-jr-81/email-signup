@@ -544,6 +544,38 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.-top-10 {
+  top: -2.5rem;
+}
+
+.-top-20 {
+  top: -5rem;
+}
+
+.-top-32 {
+  top: -8rem;
+}
+
+.-top-64 {
+  top: -16rem;
+}
+
+.-top-8 {
+  top: -2rem;
+}
+
+.-top-\[80\%\] {
+  top: -80%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -802,6 +834,11 @@ video {
 
 .to-slate-700 {
   --tw-gradient-to: #334155 var(--tw-gradient-to-position);
+}
+
+.object-scale-down {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .p-4 {
@@ -1080,6 +1117,14 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:absolute {
+    position: absolute;
+  }
+
+  .sm\:relative {
+    position: relative;
+  }
+
   .sm\:-order-1 {
     order: -1;
   }
@@ -1106,5 +1151,10 @@ video {
 
   .sm\:grid {
     display: grid;
+  }
+
+  .sm\:object-scale-down {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
   }
 }
