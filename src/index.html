@@ -16,7 +16,7 @@
     <main
       class="font-roboto bg-slate-700 h-screen flex items-center justify-center text-slate-700"
     >
-      <div class="main-section bg-white max-w-2xl flex p-4 rounded-3xl">
+      <div class="signup-form bg-white max-w-2xl grid sm:flex p-4 rounded-3xl">
         <section class="LHS p-8 grid content-center">
           <div class="content flex flex-col mb-4">
             <h1 class="text-[42px] font-extrabold text-slate-700 mb-4">
@@ -58,9 +58,27 @@
             </button>
           </section>
         </section>
-        <div class="RHS">
+        <div class="RHS order-first sm:order-last">
           <img src="../assets/images/illustration-sign-up-desktop.svg" />
         </div>
+      </div>
+
+      <!-- Here is the code for the success box -->
+      <!--  -->
+      <!--  -->
+
+      <div class="success-box bg-white max-w-72 rounded-2xl p-8 hidden">
+        <img src="../assets/images/icon-list.svg" class="w-9 mb-4" />
+        <h1 class="text-3xl font-semibold mb-4">Thanks for subscribing!</h1>
+        <p class="text-[10px] mb-6">
+          A confirmation email has been sent to <span>someName</span>. Please
+          open it and click the button to confirm your subscription.
+        </p>
+        <button
+          class="bg-slate-700 text-white text-[10px] font-light w-full p-2 rounded-md bg-gradient-to-r hover:from-red-500 hover:to-orange-500 ..."
+        >
+          Dismiss message
+        </button>
       </div>
     </main>
   </body>
