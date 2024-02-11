@@ -3,10 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" , href="./styles.css" />
-    <title>Document</title>
+    <title>Email sign up</title>
   </head>
   <body>
-    <h1 class="bg-pink-300">Hello Tailwind Css!</h1>
+    <main
+      class="font-roboto bg-slate-700 h-screen flex items-center justify-center"
+    >
+      <div class="main-section bg-white max-w-2xl flex p-4 rounded-3xl">
+        <section class="LHS p-4 grid content-center">
+          <div class="content flex flex-col">
+            <h1 class="text-4xl font-extrabold text-slate-700">
+              Stay updated!
+            </h1>
+            <p class="text-sm">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <div class="bullet-points flex items-center">
+              <img src="../assets/images/icon-list.svg" class="w-4" />
+              <h3 class="text-xs ml-3">
+                Product discovery and building what matters
+              </h3>
+            </div>
+            <div class="bullet-points flex items-center">
+              <img src="../assets/images/icon-list.svg" class="w-4" />
+              <h3 class="text-xs ml-3">
+                Measuring to ensure updates are a success
+              </h3>
+            </div>
+            <div class="bullet-points flex items-center">
+              <img src="../assets/images/icon-list.svg" class="w-4" />
+              <h3 class="text-xs ml-3">And much more!</h3>
+            </div>
+          </div>
+          <section class="email-signup">
+            <h4>Email address</h4>
+            <input placeholder="email@company.com" />
+            <button>Subscribe to monthly newsletter</button>
+          </section>
+        </section>
+        <div class="RHS">
+          <img src="../assets/images/illustration-sign-up-desktop.svg" />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
