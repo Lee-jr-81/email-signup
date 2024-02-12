@@ -10,6 +10,7 @@ const emailBox = document.getElementById("userInput");
 const errorBox = document.getElementById("errorBox");
 const mainForm = document.getElementById("signupForm");
 const successBox = document.getElementById("successBox");
+const emailDetail = document.getElementById("successMessage");
 
 //
 // Main function
