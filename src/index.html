@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" , href="./styles.css" />
+    <script defer src="./script.js"></script>
+
     <title>Email sign up</title>
   </head>
   <body>
@@ -42,21 +44,28 @@
               <h3 class="text-[12px] ml-3">And much more!</h3>
             </div>
           </div>
-          <section class="email-signup">
-            <h4 class="text-[10px] font-semibold text-slate-700 mb-1">
-              Email address
-            </h4>
+          <form id="emailSignup">
+            <div class="flex justify-between">
+              <h4 class="text-[10px] font-semibold text-slate-700 mb-1">
+                Email address
+              </h4>
+              <h4 class="text-[10px] font-semibold text-red-500 mb-1 hidden">
+                valid email required
+              </h4>
+            </div>
             <input
+              id="userInput"
               type="text"
               placeholder="email@company.com"
-              class="text-slate-700 text-[12px] font-medium border rounded-md p-3 w-full placeholder-slate-400 mb-4 tracking-wide hover:border-slate-700 active:border-red-600"
+              class="text-slate-700 outline-none text-[12px] font-medium border rounded-md p-3 w-full placeholder-slate-400 mb-4 tracking-wide hover:border-slate-700 active:border-red-600"
             />
             <button
+              id="submitButton"
               class="bg-slate-700 rounded-md text-white text-[12px] font-semibold p-3 w-full tracking-wide bg-gradient-to-r from-slate-700 to-slate-700 hover:from-red-500 hover:to-orange-500 ..."
             >
               Subscribe to monthly newsletter
             </button>
-          </section>
+          </form>
         </section>
         <div class="RHS order-first sm:order-last">
           <img
@@ -78,6 +87,7 @@
           open it and click the button to confirm your subscription.
         </p>
         <button
+          id="confirmationButton"
           class="bg-slate-700 text-white text-[10px] font-light w-full p-2 rounded-md bg-gradient-to-r hover:from-red-500 hover:to-orange-500 ..."
         >
           Dismiss message
